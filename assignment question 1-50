@@ -1,0 +1,786 @@
+'''
+Ques-1: Heads and tales.
+h=int(input("Enter the number of heads\n"))
+l=int(input("Enter the number of legs\n"))
+r=(l/2)-h
+c=(2*h)-(l/2)
+print("Number of Chickens = %d\nNumber of Rabbits = %d"%(c,r))
+'''
+
+
+'''
+Ques-2: Swapping with using third variable.
+a=int(input("Enter a number\n"))
+b=int(input("Enter another number\n"))
+print("Before swapping :\na = %d\nb = %d"%(a,b))
+c=a
+a=b
+b=c
+print("After swapping :\na = %d\nb = %d"%(a,b))
+'''
+
+
+'''
+Ques-3: Without using third variable and any other variable.
+a=int(input("Enter a number\n"))
+b=int(input("Enter another number\n"))
+print("Before swapping :\na = %d\nb = %d"%(a,b))
+a,b=b,a
+print("After swapping :\na = %d\nb = %d"%(a,b))
+'''
+
+
+'''
+Ques-4: Swapping With using bitwise operator.
+a=int(input("Enter a number\n"))
+b=int(input("Enter another number\n"))
+print("Before swapping :\na = %d\nb = %d"%(a,b))
+a=a^b
+b=a^b
+a=a^b
+print("After swapping :\na = %d\nb = %d"%(a,b))
+'''
+
+
+'''
+Ques-5: WAP in python to find out BMI.
+m=float(input("Enter the mass in kilogram:\n"))
+h=float(input("Enter the height in meters:\n"))
+bmi=m/(h**2)
+print("BMI = %f"%bmi)
+'''
+
+
+'''
+Ques-6: WAP in python to multiply a number by 32 without using multiplication operator.
+n=int(input("Enter the number to multiply it by 32:\n"))
+m=n<<5
+print("Answer = %d"%m)
+'''
+
+
+'''
+Ques-7: WAP in python to multiply a number by 65 without using multiplication operator.
+n=int(input("Enter the number to multiply it by 65:\n"))
+m=(n<<6)+n
+print("Answer = %d"%m)
+'''
+
+
+'''
+Ques-8: WAP in python to find out whether a number is odd or even using bitwise operator only.
+n=int(input("Enter the number to find whether the number is even or odd:\n"))
+oe=n&1
+if(oe == 1):
+print("The number is odd")
+else:
+print("The number is even")
+'''
+
+
+'''
+Ques-9: WAP in python to enter two coordinates by the user and find the distance between the coordinates.
+x1=float(input("Enter the value of x1:\n"))
+y1=float(input("Enter the value of y1:\n"))
+x2=float(input("Enter the value of x2:\n"))
+y2=float(input("Enter the value of y2:\n"))
+x3=(x2-x1)**2
+y3=(y2-y1)**2
+print("Distance between the coordinates is %f"%((x3+y3)**(1/2)))
+'''
+
+
+'''
+Ques-10: WAP in python to enter height and base from the user and find the hypotenuse.
+b=float(input("Enter the base length of the triangle:\n"))
+h=float(input("Enter the height of the triangle:\n"))
+print("Hypotenuse of triangle = %.2f"%((b**2)+(h**2))**(1/2))
+'''
+
+
+'''
+Ques-11: Vowels and Consonents.
+x=input("Enter any alphabet\n")
+if(x=='a' or x=='e' or x=='i' or x=='o' or x=='u' or x=='A' or x=='E' or x=='I' or x=='O' or x=='U'):
+print("Vowels")
+else:
+print("Consonent")
+'''
+
+
+'''
+Ques-12: Find out greatest among two numbers.
+a=int(input("Enter first number\n"))
+b=int(input("Enter second number\n"))
+if (a>b):
+print("\nGreater number is %d"%a)
+else:
+print("\nGreater number is %d"%b)
+'''
+
+
+'''
+Ques-13: Odd Even Number.
+a=int(input("Enter a number\n"))
+if(a%2 == 0):
+print("Even")
+else:
+print("Odd")
+'''
+
+
+'''
+Ques-14: Odd Even with Bitwise operator.
+a=int(input("Enter a number\n"))
+if (a&1 == 1):
+print("Odd")
+else :
+print("Even")
+'''
+
+
+'''
+Ques-15: Find out Largest number among three numbers.
+a=int(input("Enter first number\n"))
+b=int(input("Enter second number\n"))
+c=int(input("Enter third number\n"))
+print("Greatest number is %d"%max(a,b,c))
+'''
+
+
+'''
+Ques-16: Input all sides of triangle and check whether the triangle can be formed or not.
+a=int(input("Enter first side\n"))
+b=int(input("Enter second side\n"))
+c=int(input("Enter third side\n"))
+if ((a+b) > c and (b+c) > a and (c+a) >b) :
+print("Triangle can be formed with the given parameters")
+else :
+print("Triangle cannot be formed with the given parameters")
+'''
+
+
+'''
+Ques-17: Input all angles of triangle and check whether the triangle can be formed or not.
+a=int(input("Enter first angle\n"))
+b=int(input("Enter second angle\n"))
+c=int(input("Enter third angle\n"))
+if (a+b+c == 180) :
+print("Triangle can be formed with the given parameters")
+else :
+print("Triangle cannot be formed with the given parameters")
+'''
+
+
+'''
+Ques-18: Calculate the profit and loss percentage where the selling price and cost price is given by the user.
+cp=float(input("Enter the cost price of the product\n"))
+sp=float(input("Enter the selling price of the product\n"))
+gain = sp-cp
+if (gain > 0) :
+print("Gain percentage = %.2f%%"%((gain/cp)*100))
+elif (gain < 0) :
+print("Loss percentage = %.2f%%"%((-gain/cp)*100))
+elif (gain == 0) :
+print("No profit and No Loss")
+'''
+
+
+'''
+Ques-19: Check whether the input number is divisible by both 5 and 11 or not.
+a=int(input("Enter the number\n"))
+if ( a%5 == 0 and a%11 == 0) :
+print("This number is divisible by both 5 and 11")
+else :
+print("This number is not divisible by both 5 and 11")
+'''
+
+
+'''
+Ques-20: Salary.
+bs=float(input("Enter the base salary of the employee\n"))
+if (bs <= 10000) :
+print("Total Salary = %.2f"%(bs+(20/100)*bs+(80/100)*bs))
+elif (bs > 10000 and bs <= 20000) :
+print("Total Salary = %.2f"%(bs+(25/100)*bs+(85/100)*bs))
+else :
+print("Total Salary = %.2f"%(bs+(30/100)*bs+(95/100)*bs))
+'''
+
+
+'''
+Ques-21: Apples in 7-7 groups no apple left.
+a=int(input("Enter the number of apples\n"))
+if ( a%7==0 and a%6==1 and a%5==1 and a%4==1 and a%3==1) :
+print("Valid")
+else :
+print("Invalid")
+'''
+
+
+'''
+Ques-22: Various actions in dictionary. 
+d={1:2,3:4,5:6}
+for i in d:
+    print(i) # to print keys
+    print(d[i]) # to print values
+print()
+for i in d.keys(): # to print keys
+    print(i)
+print()    
+for i in d.values(): # to print values
+    print(i)
+print()
+for i in d.items(): # to print items
+    print(i)            
+print()
+'''
+
+'''
+Ques-23: Form a dictionary from the user.
+d={}
+for i in range (3):
+    x=int(input('Enter Key : '))
+    d1={}
+    y=int(input('Enter key for nested : '))
+    z=int(input('Enter value : '))
+    d1.update({y:z})
+    p=d1
+    d.update({x:p})
+print(d)
+'''
+
+
+'''
+Ques-24: Enter the dict from the user and find the sum of vaules.
+d={}
+lst=[]
+s=0
+n=int(input("Enter the number of elements to store in the dictionary : "))
+for i in range (n):
+    x=int(input("Enter the key : "))
+    y=int(input("Enter the value : "))
+    s=s+y
+    lst.append(y)
+    d.update({x:y})
+print(d)
+print("Sum = ",s)
+'''
+
+
+'''
+Ques-25: Count the frequency of each character in a string entered by the user and display it using dictionary.
+str1 = input('Enter any string :\n')
+lst1 = []
+lst2 = []
+for i in range(26):
+    lst1.append(0)              # for lower Case alphabets
+    lst2.append(0)              # for Upper Case alphabets
+for i in range(len(str1)):
+    for j in range(97, 123, 1): # range for lower case alphabets
+        if(ord(str1[i]) == j):
+            lst1[j-97] += 1
+    for j in range(65, 91, 1):  # range for upper case alphabets
+        if(ord(str1[i]) == j):
+            lst2[j-65] += 1
+dict1 = {}                      # for lower case alphabets
+dict2 = {}                      # for upper case alphabets
+for i in range(26):
+    if(lst1[i] != 0):
+        a = chr(i+97)
+        b = lst1[i]
+        dict1.update({a: b})
+    if(lst2[i] != 0):
+        a = chr(i+65)
+        b = lst2[i]
+        dict2.update({a: b})
+print('For lower Case Letters :', dict1)
+print('For upper Case Letters :', dict2)
+'''
+
+
+'''
+Ques-26: Write a program to display the name of all employees whose salary is more than 25000 using nested dictionary.
+n = int(input("Enter the number of employees :\n"))
+dict1 = {}
+for i in range(n):
+    a = i+1
+    dict2 = {}
+    b = input('Enter the name of employee %d : ' % (i+1))
+    c = eval(input('Enter salary : '))
+    print()
+    dict2.update({b: c})
+    dict1.update({a: dict2})
+print("For all employees :",dict1)
+print()
+for i in range(n):
+    for j in dict1[i+1].values():
+        if j<=25000:
+            dict1.pop(i+1)
+print("For salary more than 25000 :",dict1)
+'''
+
+
+'''
+Ques-27: Merge two nested dictionaries.
+dict1 = {}
+n = int(input("Enter the number of elements you want to store in dictionary 1 : "))
+for i in range(n):
+    print()
+    a = eval(input("Enter key %d : " % (i+1)))
+    dict3 = {}
+    b = eval(input("Enter nested key %d : " % (i+1)))
+    c = eval(input("Enter value : "))
+    dict3.update({b: c})
+    dict1.update({a: dict3})
+print()
+dict2 = {}
+m = int(input("Enter the number of elements you want to store in dictionary 2 : "))
+for i in range(m):
+    print()
+    a = eval(input("Enter key %d : " % (i+1)))
+    dict3 = {}
+    b = eval(input("Enter nested key %d : " % (i+1)))
+    c = eval(input("Enter value : "))
+    dict3.update({b: c})
+    dict2.update({a: dict3})
+print()
+print("Dictionary 1 = ", dict1)
+print("Dictionary 2 = ", dict2)
+print()
+dict3 = {}
+for i in dict1.keys():
+    dict3.update({i: dict1[i]})
+for i in dict2.keys():
+    dict3.update({i: dict2[i]})
+print("Merged Dictionary = ", dict3)
+'''
+
+
+'''
+Ques-28: Two nested dictionaries, first element of first dict and last element of second dict to add in third dictionary.
+dict1 = {}
+n = int(input("Enter the number of elements you want to store in dictionary 1 : "))
+for i in range(n):
+    print()
+    a = eval(input("Enter key %d : " % (i+1)))
+    dict3 = {}
+    b = eval(input("Enter nested key %d : " % (i+1)))
+    c = eval(input("Enter value : "))
+    dict3.update({b: c})
+    dict1.update({a: dict3})
+print()
+dict2 = {}
+m = int(input("Enter the number of elements you want to store in dictionary 2 : "))
+for i in range(m):
+    print()
+    a = eval(input("Enter key %d : " % (i+1)))
+    dict3 = {}
+    b = eval(input("Enter nested key %d : " % (i+1)))
+    c = eval(input("Enter value : "))
+    dict3.update({b: c})
+    dict2.update({a: dict3})
+print()
+print("Dictionary 1 = ", dict1)
+print("Dictionary 2 = ", dict2)
+print()
+dict3 = {}
+for i in dict1.keys():
+    dict3.update({i: dict1[i]})
+    break
+for i in dict2.keys():
+    continue
+dict3.update({i: dict2[i]})
+print("New Dictionary = ", dict3)
+'''
+
+
+'''
+Ques-29: Multiply all the elements of the tuple which are stored in dictionary as its value.
+dict1 = {}
+n = int(input("Enter the number of elements you want to store in dictionary : "))
+for i in range(n):
+    print()
+    a = eval(input("Enter key %d : " % (i+1)))
+    dict2 = {}
+    m = int(input("Enter the number of elements you want to insert in tuple : "))
+    tpl = ()
+    for j in range(m):
+        b = eval(input("Enter element %d : " % (j+1)))
+        tpl += b,
+    dict1.update({a: tpl})
+print()
+print("Dictionary = ", dict1)
+print()
+c = 0
+for i in dict1.values():
+    c += 1
+    p = 1
+    for j in range(len(i)):
+        p = p*i[j]
+    print("Product of elements in tuple %d = %d" % (c, p))
+'''
+
+
+'''
+Ques-30: Create a dictionary whose is perfect number and value is a strong number in a trange given by the user.
+dict1={}
+lst1=[]
+lst2=[]
+print("Enter the range :")
+n=int(input("Enter starting value : "))
+m=int(input("Enter ending value : "))
+for i in range(n,m,1):
+    s=0
+    for j in range(0,i-1,1):
+        if(i%(j+1)==0):
+            s=s+j+1
+    if(s==i):
+        lst1.append(i)
+    s=0
+    c=i
+    while c>0:
+        x=c%10
+        p=1
+        for j in range(1,(x+1),1):
+            p=p*j
+        s=s+p
+        c=c//10
+    if(s==i):
+        lst2.append(i)
+len1=min(len(lst1),len(lst2))
+for i in range(len1):
+    dict1.update({lst1[i]:lst2[i]})
+print(dict1)
+'''
+
+
+'''
+Ques-31: Change the key of nested dictionary.
+dict1 = {}
+n = int(input("Enter the number of elements you want to store in dictionary : "))
+for i in range(n):
+    print()
+    a = eval(input("Enter key %d : " % (i+1)))
+    dict2 = {}
+    b = eval(input("Enter nested key %d : " % (i+1)))
+    c = eval(input("Enter value : "))
+    dict2.update({b: c})
+    dict1.update({a: dict2})
+print(dict1)
+print()
+x = eval(input("Enter the nested key you want to change : "))
+for i in dict1.values():
+    for j in i.keys():
+        if x == j:
+            y = eval(input("Enter New Key : "))
+            i.update({y: i[j]})
+            i.pop(j)
+            print()
+            print("Updated Dictionary :", dict1)
+            break
+'''
+
+
+'''
+Ques-32: separate all positive number from the list using lambda function.
+ls=[1,-2,3,-4,5,-6]
+lst1=list(filter(lambda n:n>0,ls))
+print(lst1)
+'''
+
+
+'''
+Ques-33: Change the case of elements of list using map in lambda function.
+ls=['dog','elephant','tiger']
+lst1=list(map(lambda b:b.upper(),ls))
+print(lst1)
+'''
+
+
+'''
+Ques-34: Find the cube of each element of the list and store those vvalues in another list.
+ls=[1,2,3,4,5]
+lst1=list(map(lambda n:n**3,ls))
+print(lst1)
+'''
+
+
+'''
+Ques-35 Swap using function.
+f=lambda x,y:x+y
+n=int(input("Enter number of terms : "))
+a=0
+b=1
+print(a,b,end=' ')
+for i in range(n-2):
+z=f(a,b)
+a=b
+b=z
+print(z,end=' ')
+'''
+
+
+'''
+Ques-36: Use of reduce function.
+import functools
+ls=[1,2,3,4,5,6,7,8,9,10]
+print(functools.reduce(lambda a,b:a+b,ls))
+'''
+
+
+'''
+Ques-37: form a function which returns the square of a number.
+def fun(num):
+    return num*num
+x=fun(4)
+print(x)
+x=fun(4.2)
+print(x)
+'''
+
+
+'''
+Ques-38: With default argument:
+def fun(num,num1=2):
+print(num*num)
+print(num1)
+fun(4)
+'''
+
+
+'''
+Ques-39: With different arguments:
+def fun(num,num1):
+print(num*num)
+print(num1)
+fun(4,2)
+'''
+
+
+Ques-40: 
+def fun(num,num1=2):
+print(num*num)
+print(num1)
+fun(4,7) #or fun(num=4,num1=7)
+'''
+
+
+'''
+Ques-41: Passing a list in argument:
+def fun(num):
+print(num)
+lst=[1,2,3,4]
+fun(lst)
+'''
+
+'''
+Ques-42: Operations between arguments in function:
+def cal(num,num1):
+a=num+num1
+b=num-num1
+c=num*num1
+d=num**num1
+e=num/num1
+f=num//num1
+return a,b,c,d,e,f # returns in the form of tuple
+x=eval(input())
+y=eval(input())
+n1,n2,n3,n4,n5,n6=cal(x,y)
+print(n1)
+print(n2)
+print(n3)
+print(n4)
+print(n5)
+print(n6)
+'''
+
+
+'''
+Ques-43: Print first ten natural numbers using function:
+def natural():
+for i in range(10):
+print(i+1)
+natural()
+'''
+
+
+'''
+Ques-44: Enter the list from the user and find the sum of its elements using function:
+def listsum(lst):
+l=len(lst)
+s=0
+for i in range(l):
+s=s+lst[i]
+return s
+lst=eval(input("Enter the list : "))
+listsum(lst)
+'''
+
+
+'''
+Ques-45: List
+lst1=[[1,2],[3,4]]
+lst2=[[5,6],[7,8]]
+lst3=[]
+for i in range(len(lst1)):
+    lst4=[]
+    for j in range(len(lst1[i])):
+        lst4.append((lst[i][j]+lst2[i][j]))
+    lst3.append(lst4)
+print(lst3)
+'''
+
+
+'''
+Ques-46: Count the frequency of each character in a string entered by the user and display it using dictionary.
+str1 = input('Enter any string :\n')
+lst1 = []
+lst2 = []
+for i in range(26):
+    lst1.append(0)              # for lower Case alphabets
+    lst2.append(0)              # for Upper Case alphabets
+for i in range(len(str1)):
+    for j in range(97, 123, 1): # range for lower case alphabets
+        if(ord(str1[i]) == j):
+            lst1[j-97] += 1
+    for j in range(65, 91, 1):  # range for upper case alphabets
+        if(ord(str1[i]) == j):
+            lst2[j-65] += 1
+dict1 = {}                      # for lower case alphabets
+dict2 = {}                      # for upper case alphabets
+for i in range(26):
+    if(lst1[i] != 0):
+        a = chr(i+97)
+        b = lst1[i]
+        dict1.update({a: b})
+    if(lst2[i] != 0):
+        a = chr(i+65)
+        b = lst2[i]
+        dict2.update({a: b})
+print('For lower Case Letters :', dict1)
+print('For upper Case Letters :', dict2)
+'''
+
+
+'''
+Ques-47: Write a program to display the name of all employees whose salary is more than 25000 using nested dictionary.
+n = int(input("Enter the number of employees :\n"))
+dict1 = {}
+for i in range(n):
+    a = i+1
+    dict2 = {}
+    b = input('Enter the name of employee %d : ' % (i+1))
+    c = eval(input('Enter salary : '))
+    print()
+    dict2.update({b: c})
+    dict1.update({a: dict2})
+print("For all employees :",dict1)
+print()
+for i in range(n):
+    for j in dict1[i+1].values():
+        if j<=25000:
+            dict1.pop(i+1)
+print("For salary more than 25000 :",dict1)
+'''
+
+
+'''
+Ques-48: Merge two nested dictionaries.
+dict1 = {}
+n = int(input("Enter the number of elements you want to store in dictionary 1 : "))
+for i in range(n):
+    print()
+    a = eval(input("Enter key %d : " % (i+1)))
+    dict3 = {}
+    b = eval(input("Enter nested key %d : " % (i+1)))
+    c = eval(input("Enter value : "))
+    dict3.update({b: c})
+    dict1.update({a: dict3})
+print()
+dict2 = {}
+m = int(input("Enter the number of elements you want to store in dictionary 2 : "))
+for i in range(m):
+    print()
+    a = eval(input("Enter key %d : " % (i+1)))
+    dict3 = {}
+    b = eval(input("Enter nested key %d : " % (i+1)))
+    c = eval(input("Enter value : "))
+    dict3.update({b: c})
+    dict2.update({a: dict3})
+print()
+print("Dictionary 1 = ", dict1)
+print("Dictionary 2 = ", dict2)
+print()
+dict3 = {}
+for i in dict1.keys():
+    dict3.update({i: dict1[i]})
+for i in dict2.keys():
+    dict3.update({i: dict2[i]})
+print("Merged Dictionary = ", dict3)
+'''
+
+
+'''
+Ques-49: Two nested dictionaries, first element of first dict and last element of second dict to add in third dictionary.
+dict1 = {}
+n = int(input("Enter the number of elements you want to store in dictionary 1 : "))
+for i in range(n):
+    print()
+    a = eval(input("Enter key %d : " % (i+1)))
+    dict3 = {}
+    b = eval(input("Enter nested key %d : " % (i+1)))
+    c = eval(input("Enter value : "))
+    dict3.update({b: c})
+    dict1.update({a: dict3})
+print()
+dict2 = {}
+m = int(input("Enter the number of elements you want to store in dictionary 2 : "))
+for i in range(m):
+    print()
+    a = eval(input("Enter key %d : " % (i+1)))
+    dict3 = {}
+    b = eval(input("Enter nested key %d : " % (i+1)))
+    c = eval(input("Enter value : "))
+    dict3.update({b: c})
+    dict2.update({a: dict3})
+print()
+print("Dictionary 1 = ", dict1)
+print("Dictionary 2 = ", dict2)
+print()
+dict3 = {}
+for i in dict1.keys():
+    dict3.update({i: dict1[i]})
+    break
+for i in dict2.keys():
+    continue
+dict3.update({i: dict2[i]})
+print("New Dictionary = ", dict3)
+'''
+
+
+'''
+Ques-50: Multiply all the elements of the tuple which are stored in dictionary as its value.
+dict1 = {}
+n = int(input("Enter the number of elements you want to store in dictionary : "))
+for i in range(n):
+    print()
+    a = eval(input("Enter key %d : " % (i+1)))
+    dict2 = {}
+    m = int(input("Enter the number of elements you want to insert in tuple : "))
+    tpl = ()
+    for j in range(m):
+        b = eval(input("Enter element %d : " % (j+1)))
+        tpl += b,
+    dict1.update({a: tpl})
+print()
+print("Dictionary = ", dict1)
+print()
+c = 0
+for i in dict1.values():
+    c += 1
+    p = 1
+    for j in range(len(i)):
+        p = p*i[j]
+    print("Product of elements in tuple %d = %d" % (c, p))
+'''
